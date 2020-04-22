@@ -10,12 +10,6 @@ class Controller
     // Load model 
     public function model($model)
     {
-        // if(file_exists('../app/views/' . $model . 'php')){
-        //     require_once '../app/models/' . $model . '.php';
-        //     return new $model();
-        // } else {
-        //     die('Model does not exists');
-        // }
         require_once '../app/models/' . $model . '.php';
         return new $model();
     }
